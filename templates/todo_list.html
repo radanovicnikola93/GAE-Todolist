@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Todo list {% endblock title %}
+
+{% block page_content %}
+
+<h1>TODO List</h1>
+
+{% for task in list %}
+    <ul>
+        <a href="/task/{{ task.key.id() }}">{{ task.vnos }}</a>
+    </ul>
+
+{% endfor %}
+
+{% endblock page_content %}

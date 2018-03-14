@@ -1,2 +1,5 @@
-# GAE-Todolist
-A simple GAE project inserting tasks for TODO list
+# GAE TODO list
+
+<h2>About</h2>
+
+Basic GAE project with Jinja templating engine

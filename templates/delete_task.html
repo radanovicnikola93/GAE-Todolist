@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Delete task {% endblock title %}
+
+{% block page_content %}
+
+<h1>Delete task</h1>
+
+<form action="/task/{{ task.key.id() }}/delete" method="post">
+
+    <button type="submit">Delete</button>
+</form>
+
+<a href="/list"><button>No</button></a>
+{% endblock page_content %}

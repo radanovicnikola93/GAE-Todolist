@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Task details {% endblock title %}
+
+{% block page_content %}
+
+<h1>Task</h1>
+
+<ul>
+    <li><b>Task name: </b> {{ task.vnos }}</li>
+    <li><b>Todo date: </b> {{ task.tododate }}</li>
+    <li><b>Task done: </b> {{ task.taskdone }}</li>
+    <li><b>Entry made: </b> {{ task.entrymade }}</li>
+
+    <span id="edit"><a href="/task/{{ task.key.id() }}/edit">Edit</a></span>
+    <span id="delete"><a href="/task/{{ task.key.id() }}/delete">Delete</a></span>
+</ul>
+
+
+{% endblock page_content %}

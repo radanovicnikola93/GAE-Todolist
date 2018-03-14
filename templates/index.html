@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Main page {% endblock title %}
+
+{% block page_content %}
+
+<form method="post">
+
+    <fieldset>
+        <legend><h1>TODO List</h1></legend>
+        <label for="vnos">Task: </label><input type="text" name="vnos" id="vnos">
+        <label for="tododate">Todo date: </label><input type="text" name="tododate" id="tododate" placeholder="DD/MM/YYYY">
+        <label for="taskdone">Done? </label><input type="checkbox" name="taskdone" id="taskdone" value="true"><br>
+        <button type="submit">Submit</button>
+    </fieldset>
+
+</form>
+
+{% if task %}
+<p>{{ task }}</p>
+{% endif %}
+
+
+{% endblock page_content %}
